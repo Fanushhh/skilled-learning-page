@@ -1,0 +1,32 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.footer{
+    background-color: $dark-blue;
+    display: flex;
+    padding:2.125rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        max-width: 5.56rem;
+    }
+
+    .getStartedBtn{
+        @include button-custom-linear($linear-gradient-3, $linear-gradient-4, $white, .625rem,1.5rem, 1.75rem)
+    }
+
+    .getStartedBtn:hover{
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+        cursor: pointer;
+    }
+
+    @include for-tablet{
+        padding: 2.37rem;
+    }
+    @include for-desktop{
+        padding: 2rem 10.31rem; 
+        img{
+            max-width: 7.125rem;
+        }
+    }
+}

@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap:2.5rem;
-    padding:1rem;
+    padding:1rem 1rem 5rem;
     background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
     .perksHeading{
         padding: 1.75rem;
@@ -13,6 +13,7 @@
         background:linear-gradient($linear-gradient-2,$linear-gradient-1);
         color:white;
         border-radius: .625rem;
+
     }
 
     @include for-tablet{
@@ -27,15 +28,21 @@
     }
 
     @include for-desktop{
-        grid-template-columns: repeat(3, 1fr );
+        grid-template-columns: repeat(3, 350px );
         grid-template-rows: repeat(2, 320px);
-        gap:2rem;
+        column-gap:2rem;
+        row-gap: 5rem;
         margin-top: 7rem;
         padding: 2rem 10.31rem;
         font-size:1.12rem;
         .perksHeading{
             font-size: 2rem;
-            padding: 2.2rem 2rem 8.68rem;
+            padding: 4rem 2rem 8.68rem;
+            line-height: 2.5rem;
         }
+    }
+    @include for-big-desktop{
+        justify-content: center;
+        grid-template-columns: repeat(3,1fr);
     }
 }

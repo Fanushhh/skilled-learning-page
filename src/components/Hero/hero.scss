@@ -20,6 +20,10 @@
         .getStartedBtn{
             @include button-custom($dark-blue, $white, .56rem,1.5rem, 1.75rem);
         }
+        .getStartedBtn:hover{
+            background-color: $dark-purple;
+            cursor: pointer;
+        }
     
         img{
             max-width: 5.56rem;
@@ -53,6 +57,10 @@
         .getStartedBtn{
             @include button-custom-linear($linear-gradient-2,$linear-gradient-1, $white,1rem, 2.37rem,1.75rem);
             margin-bottom: 2.85rem;
+        }
+        .getStartedBtn:hover{
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+            cursor: pointer;
         }
 
         @include for-tablet{

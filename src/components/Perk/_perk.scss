@@ -6,7 +6,7 @@
 .perk{
     background-color: white;
     border-radius: .625rem;
-    padding:3.5rem 1.75rem 2rem;
+    padding:3.5rem 2rem 2rem;
     position: relative;
 
     .perkIcon{
@@ -24,7 +24,17 @@
         font-weight: $bold;
         margin-top: 1.5rem;
     }
+    .getStartedBtn:hover{
+        color:$desaturated-red;
+        cursor: pointer;
+    }
     @include for-desktop{
-        padding: ;
+          display: flex;
+          flex-direction: column;
+          .getStartedBtn{
+            position: absolute;
+            bottom: 0;
+            padding-bottom: inherit;
+          }
     }
 }

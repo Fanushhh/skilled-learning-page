@@ -5,7 +5,12 @@
 }
 
 @mixin for-desktop{
-    @media screen and (min-width:62.5rem) {
+    @media screen and (min-width:75.5rem) {
+        @content;
+    }
+}
+@mixin for-big-desktop{
+    @media screen and (min-width: 91rem) {
         @content;
     }
 }
