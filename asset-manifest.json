@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/skilled-learning-page/static/css/main.af9af8be.css",
-    "main.js": "/skilled-learning-page/static/js/main.866724f9.js",
+    "main.css": "/skilled-learning-page/static/css/main.0e5f8340.css",
+    "main.js": "/skilled-learning-page/static/js/main.e64214ae.js",
     "static/media/image-hero-desktop@2x.webp": "/skilled-learning-page/static/media/image-hero-desktop@2x.3af19b9bb3d89b64286e.webp",
     "static/media/image-hero-tablet@2x.webp": "/skilled-learning-page/static/media/image-hero-tablet@2x.1ed11650ac0c6edc16a2.webp",
     "static/media/image-hero-mobile@2x.webp": "/skilled-learning-page/static/media/image-hero-mobile@2x.4c68f7ef73002d1374a6.webp",
     "index.html": "/skilled-learning-page/index.html",
-    "main.af9af8be.css.map": "/skilled-learning-page/static/css/main.af9af8be.css.map",
-    "main.866724f9.js.map": "/skilled-learning-page/static/js/main.866724f9.js.map"
+    "main.0e5f8340.css.map": "/skilled-learning-page/static/css/main.0e5f8340.css.map",
+    "main.e64214ae.js.map": "/skilled-learning-page/static/js/main.e64214ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.af9af8be.css",
-    "static/js/main.866724f9.js"
+    "static/css/main.0e5f8340.css",
+    "static/js/main.e64214ae.js"
   ]
 }
