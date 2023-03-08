@@ -1,0 +1,77 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+
+.heroSection{
+    @include flex-container(column,flex-start,center,0);
+    position: relative;
+    .heroTopBar{
+        @include flex-container(row,center, space-between, 0);
+        width: 100%;
+        margin-bottom: 2.37rem;
+        .getStartedBtn{
+            @include button-custom($dark-blue, $white, .56rem,1.5rem, 1.75rem);
+        }
+    
+        img{
+            max-width: 5.56rem;
+            width: 100%;
+        }
+        @include for-tablet{
+            margin-bottom: 6.18rem;
+            
+        }
+    }
+    .heroDescription{
+        h1{
+            font-size: $h-size-M;
+            color:$dark-blue;
+            font-weight: $extra-bold;
+            margin-bottom: 1.65rem;
+        }
+        p{
+            margin-bottom: 1.5rem;
+        }
+        .getStartedBtn{
+            @include button-custom-linear($linear-gradient-2,$linear-gradient-1, $white,1rem, 2.37rem,1.75rem);
+            margin-bottom: 2.85rem;
+        }
+
+        @include for-tablet{
+            max-width: 400px;
+            h1{
+                max-width: 330px;
+            }
+        }
+    }
+
+    .heroSectionContainer{
+        
+        @include for-tablet{
+            flex-direction: row;
+            .heroImgContainer{
+        
+                img{
+                    max-width: 640px;
+                    position:absolute;
+                    top:-100px;
+                    right:-300px;
+                }
+            }
+        }
+
+        @include for-desktop{
+            .heroImgContainer img{
+                max-width: 1000px;
+                top:-200px;
+                right:-500px;
+            }
+        }
+    }
+
+    
+    
+    
+
+}
+

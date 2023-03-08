@@ -1,0 +1,40 @@
+@mixin for-tablet{
+    @media screen and (min-width:47.93rem) {
+        @content;
+    }
+}
+
+@mixin for-desktop{
+    @media screen and (min-width:62.5rem) {
+        @content;
+    }
+}
+@mixin button-custom($background-color, $color, $paddingTB, $paddingLR, $radius){
+    border: none;
+    background-color: $background-color;
+    color:$color;
+    padding: $paddingTB $paddingLR;
+    border-radius: $radius;
+}
+@mixin button-custom-linear($b-color1,$b-color2, $color, $paddingTB, $paddingLR, $radius){
+    border: none;
+    background: linear-gradient($b-color1,$b-color2);
+    color:$color;
+    padding: $paddingTB $paddingLR;
+    border-radius: $radius;
+}
+
+@mixin grid-container($columns, $gap, $padding){
+    display: grid;
+    grid-template-columns: $columns;
+    gap:$gap;
+    padding: $padding;
+}
+
+@mixin flex-container($orientation, $align, $justify, $gap){
+    display: flex;
+    flex-direction: $orientation;
+    align-items: $align;
+    justify-content: $justify;
+    gap: $gap;
+}
