@@ -1,0 +1,41 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+.perksContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:2.5rem;
+    padding:1rem;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    .perksHeading{
+        padding: 1.75rem;
+        font-size: 1.5rem;
+        font-weight: $extra-bold;
+        background:linear-gradient($linear-gradient-2,$linear-gradient-1);
+        color:white;
+        border-radius: .625rem;
+    }
+
+    @include for-tablet{
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 5    rem;
+        row-gap: 3.5rem;
+        column-gap: 0.625rem;
+        padding: 2.37rem;
+        .perksHeading{
+            padding: 3.5rem 2rem 8.68rem;
+        }
+    }
+
+    @include for-desktop{
+        grid-template-columns: repeat(3, 1fr );
+        grid-template-rows: repeat(2, 320px);
+        gap:2rem;
+        margin-top: 7rem;
+        padding: 2rem 10.31rem;
+        font-size:1.12rem;
+        .perksHeading{
+            font-size: 2rem;
+            padding: 2.2rem 2rem 8.68rem;
+        }
+    }
+}
