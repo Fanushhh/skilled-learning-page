@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/skilled-learning-page/static/css/main.c09a370e.css",
+    "main.js": "/skilled-learning-page/static/js/main.87a64980.js",
+    "index.html": "/skilled-learning-page/index.html",
+    "main.c09a370e.css.map": "/skilled-learning-page/static/css/main.c09a370e.css.map",
+    "main.87a64980.js.map": "/skilled-learning-page/static/js/main.87a64980.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c09a370e.css",
+    "static/js/main.87a64980.js"
+  ]
+}
