@@ -4,7 +4,15 @@
 
 .heroSection{
     @include flex-container(column,flex-start,center,0);
-    position: relative;
+      
+    padding:1rem; 
+
+    @include for-tablet{
+        padding:2.37rem;
+    }
+    @include for-desktop{
+        padding: 2.37rem 10.31rem;
+    }
     .heroTopBar{
         @include flex-container(row,center, space-between, 0);
         width: 100%;
@@ -20,6 +28,16 @@
         @include for-tablet{
             margin-bottom: 6.18rem;
             
+        }
+        @include for-desktop{
+            
+            .getStartedBtn{
+                @include button-custom($dark-blue, $white,.87rem, 2rem, 1.75rem);
+                
+            }
+            img{
+               max-width: 7.125rem; 
+            }
         }
     }
     .heroDescription{
@@ -43,29 +61,44 @@
                 max-width: 330px;
             }
         }
+        @include for-desktop{
+            max-width: 460px;
+            font-size: 1.125rem;
+            h1{
+                max-width: inherit;
+                font-size: $h-size-XL;
+            }
+            p{
+                padding-right: .8rem;
+            }
+            
+            .getStartedBtn{
+                margin-top: 1rem
+            }
+            
+        }
     }
 
     .heroSectionContainer{
+        display: flex;
+        flex-direction: column;
+        .heroImgContainer{
+            width: 100%;
+            height: 350px;
+            background-image: url('../../../public/images/image-hero-mobile@2x.webp');
+            background-size: 400px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
         
+        
+  
         @include for-tablet{
             flex-direction: row;
-            .heroImgContainer{
-        
-                img{
-                    max-width: 640px;
-                    position:absolute;
-                    top:-100px;
-                    right:-300px;
-                }
-            }
-        }
 
-        @include for-desktop{
-            .heroImgContainer img{
-                max-width: 1000px;
-                top:-200px;
-                right:-500px;
-            }
+            .heroImgContainer{
+                display: none;
+            } 
         }
     }
 

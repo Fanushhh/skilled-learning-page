@@ -14,12 +14,7 @@ export default function Hero({props}){
                     <button className='getStartedBtn'>{props.getStartedBtn}</button>
                 </div>
                 <div className='heroImgContainer'>
-                    <picture>
-                        <source media="(min-width: 1024px)" srcSet={props.heroImgDesktop} />
-                        <source media="(min-width:768px)" srcSet={props.heroImgTablet}/>
-                        <source media="(max-width: 767px)" srcSet={props.heroImgMobile}/>
-                        <img src={props.heroImgMobile} alt='hero image'/>
-                    </picture>
+                    
                 </div>
             </div>
         </section>

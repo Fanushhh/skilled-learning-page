@@ -1,12 +1,28 @@
 @import './styles/resets';
 @import './styles/variables';
+@import './styles/mixins';
 
 body {
   min-height: 100vh;
   font-family: $Jakarta;
   color:$dark-grey;
-  background-color: $white;
-  overflow-x: hidden;
+  
+}
+
+#root{
+  @include for-tablet{ 
+    background-image: url('../public/images/image-hero-tablet@2x.webp');
+    background-size: 640px;
+    background-repeat: no-repeat;
+    background-position: top -50px right -270px;
+  }
+
+  @include for-desktop{
+    
+    background-image: url('../public/images/image-hero-desktop@2x.webp');
+    background-size: 990px;
+    background-position: top -150px right -325px;
+  }
 }
 
 

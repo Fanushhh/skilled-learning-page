@@ -8,7 +8,7 @@ function App() {
   return (
     <main className="app">
       <Hero props={data}/>
-      <Perks />
+      <Perks props={data}/>
     </main>
   );
 }
